@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableDay=()=>{
+const SITTable=()=>{
     return(
         <>
         <div>
@@ -8,18 +8,23 @@ const TableDay=()=>{
                 <tbody>
                     <tr>
                         <th className="colcolor">Time</th>
-                        <th className="colcolor">CB2301</th>
-                        <th className="colcolor">CB2304</th>
-                        <th className="colcolor">CB2305</th>
-                        <th className="colcolor">CB2306</th>
-                        <th className="colcolor">CB2308</th>
-                        <th className="colcolor">CB2312</th>
-                        <th className="colcolor">CB2313</th>
+                        <th className="colcolor">Training 1/3 (Train 3)</th>
+                        <th className="colcolor">Training 1/5 (Train 5)</th>
+                        <th className="colcolor">Meeting 3/1 (Meeting 1)</th>
+                        <th className="colcolor">Meeting 3/2 (Meeting 2)</th>
+                        <th className="colcolor">Meeting 3/3 (Meeting 3)</th>
+                        <th className="colcolor">Meeting 3/4 (3rd Floor)</th>
+                        <th className="colcolor">Meeting 4/2 (Classroom)</th>
+                        <th className="colcolor">Meeting 4/3 (4th Floor)</th>
+                        
+                        
+                       
                     </tr>
 
                  
             <tr>
                 <td class="rowcolor">8:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -38,10 +43,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >9:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -60,10 +67,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >10:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -82,10 +91,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >11.00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -104,10 +115,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
             
             <tr>
                 <td class="rowcolor" >12.00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -126,10 +139,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >13.00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -148,10 +163,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >14.00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -170,10 +187,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >15:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -192,10 +211,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >16:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -214,10 +235,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >17:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -236,10 +259,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >18:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -258,10 +283,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >19:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -280,10 +307,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor">20:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -302,10 +331,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >21:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -324,10 +355,12 @@ const TableDay=()=>{
                 <th></th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
 
             <tr>
                 <td class="rowcolor" >22:00</td>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -346,4 +379,4 @@ const TableDay=()=>{
 
 }
 
-export default TableDay
+export default SITTable

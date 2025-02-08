@@ -60,13 +60,13 @@ const Header = () => {
             </form>
 
             {/* ผลลัพธ์การค้นหา */}
-            {searchTerm && (
-              <div className="search-results">
+            {searchTerm && ( 
+              <div className="search-results"> 
                 {filteredResults.length > 0 ? (
                   filteredResults.map((result, index) => (
                     <div key={index} className="search-item">
                       {result}
-                    </div>
+                    </div>        /*ช่องเสิร์ช*/
                   ))
                 ) : (
                   <div className="no-results">No results found</div>

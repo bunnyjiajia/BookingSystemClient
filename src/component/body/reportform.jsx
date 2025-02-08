@@ -8,7 +8,7 @@ function ReportForm() {
           <div>
           <hr className="solid"></hr> 
           <br />
-        <label htmlFor="Who" id="requiredata">Who are you? <span>*</span> </label>
+        <label htmlFor="Who" id="requiredata">Who are you? <span className="spespan">*</span> </label>
             <br />
 
             <select name="Who" id="Who" className="reservdropdown" required>
@@ -20,7 +20,7 @@ function ReportForm() {
 
             <br /><br /><br />
 
-            <label htmlFor="RoomSelect" id="requiredata">Match area and room<span>*</span></label> <br />
+            <label htmlFor="RoomSelect" id="requiredata">Match area and room <span className="spespan">*</span> </label> <br />
 
             <select name="RoomSlect" id="RoomSlect" className="reservdropdown" required>
             
@@ -58,7 +58,7 @@ function ReportForm() {
                
             
 
-            <label htmlFor="ReportStartDate" id="requiredata">Report start date <span>*</span> </label><br />
+            <label htmlFor="ReportStartDate" id="requiredata">Report start date <span className="spespan">*</span> </label><br />
             <input type="text" className="input-text4" placeholder="DD" /> -
             <input type="text" className="input-text5" placeholder="MM" /> -
             <input type="text" className="input-text5" placeholder="YYYY" /> <br />
@@ -66,7 +66,7 @@ function ReportForm() {
             <label id="input-text7">Month</label>
             <label id="input-text8">Year</label><br /><br /><br />
 
-            <label htmlFor="ReportStartDate" id="requiredata">Report end date <span>*</span> </label><br />
+            <label htmlFor="ReportStartDate" id="requiredata">Report end date <span className="spespan">*</span> </label><br />
             <input type="text" className="input-text4" placeholder="DD" /> -
             <input type="text" className="input-text5" placeholder="MM" /> -
             <input type="text" className="input-text5" placeholder="YYYY" /> <br />
@@ -74,8 +74,8 @@ function ReportForm() {
             <label id="input-text7">Month</label>
             <label id="input-text8">Year</label><br /><br /><br />
 
-            <label htmlFor="StartTime" id="requiredata">Start time <span>*</span></label>
-            <label htmlFor="EndTime" id="requiredata2">End Time <span>*</span></label> <br />
+            <label htmlFor="StartTime" id="requiredata">Start time <span className="spespan">*</span></label>
+            <label htmlFor="EndTime" id="requiredata2">End Time <span className="spespan">*</span> </label> <br />
 
             <select name="StartTime" id="StartTime" className="reservdropdown" required>
             <option value="08:30:00" align="center">8.30</option>
@@ -141,10 +141,10 @@ function ReportForm() {
             </select> <br /><br />
 
 
-            <label htmlFor="Fulldes" id="requiredata">Description<span> *</span></label><br />
+            <label htmlFor="Fulldes" id="requiredata">Description<span className="spespan">*</span></label><br />
             <input type="text" name="Fulldes" id="Fulldes"className="input-text3"required/> <br />
 
-            <label htmlFor="CreateBy" id="requiredata">Create by <span>*</span></label><br />
+            <label htmlFor="CreateBy" id="requiredata">Create by <span className="spespan">*</span></label><br />
             <input type="text" name="CreateBy" id="CreateBy"className="input-text"required/> <br /><br /><br />
 
             <br />

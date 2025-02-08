@@ -9,7 +9,7 @@ const SearchHead = () => {
 
   return (
     <>
-      <nav className="SearchHeaders">
+      <nav className="SearchHeaders"> {/** ปุ่มเฉยๆ ไม่ใช่ช่องเสิร์ช*/}
         <h2>FIND</h2>
         <div className={`action ${isActive("/Rooms") ? "clicked" : ""}`}>
           <Link to="/Rooms">Rooms</Link>
@@ -23,7 +23,7 @@ const SearchHead = () => {
         <div className={`action ${isActive("/ViewMonth") ? "clicked" : ""}`}>
           <Link to="/ViewMonth">View Month</Link>
         </div>
-      </nav>
+      </nav>  
 
       <Link to="/Rooms">
         <div className="SearchBar">

@@ -10,7 +10,7 @@ function BookingForm() {
             
          <hr className="solid"></hr> 
          <br />
-            <label htmlFor="Who" id="requiredata">Who are you? <span>*</span> </label>
+            <label htmlFor="Who" id="requiredata">Who are you? <span className="spespan">*</span> </label>
             <br />
 
             <select name="Who" id="Who" className="reservdropdown" required>
@@ -22,7 +22,7 @@ function BookingForm() {
 
            <br /><br />
 
-            <label htmlFor="RoomSelect" id="requiredata">Room Reservation <span>*</span></label> <br />
+            <label htmlFor="RoomSelect" id="requiredata">Room Reservation <span className="spespan">*</span></label> <br />
 
             <select name="RoomSlect" id="RoomSlect" className="reservdropdown" required>
             
@@ -59,7 +59,7 @@ function BookingForm() {
 
   
 
-            <label htmlFor="SelectDate" id="requiredata">Select date <span>*</span> </label> <br />
+            <label htmlFor="SelectDate" id="requiredata">Select date <span className="spespan">*</span> </label> <br />
             <input type="text" className="input-text4" placeholder="DD"/> -
             <input type="text" className="input-text5" placeholder="MM" /> -
             <input type="text" className="input-text5" placeholder="YYYY" /> <br />
@@ -73,8 +73,8 @@ function BookingForm() {
             <br />
             <br />
 
-            <label htmlFor="StartTime" id="requiredata">Start time <span>*</span></label>
-            <label htmlFor="EndTime" id="requiredata2">End Time <span>*</span></label> <br />
+            <label htmlFor="StartTime" id="requiredata">Start time <span className="spespan">*</span></label>
+            <label htmlFor="EndTime" id="requiredata2">End Time <span className="spespan">*</span></label> <br />
 
             <select name="StartTime" id="StartTime" className="reservdropdown" required>
                 <option value="08:00:00" align="center">8.00</option>
@@ -142,7 +142,7 @@ function BookingForm() {
             </select> <br /><br />
 
 
-            <label htmlFor="Purpose" id="requiredata">Purpose of using the room<span>*</span></label> <br />
+            <label htmlFor="Purpose" id="requiredata">Purpose of using the room<span className="spespan">*</span></label> <br />
             <textarea name="Purpose" id="Purpose" placeholder="  Ex. lecture" className="textareastlye" required ></textarea>
             
         </div>
@@ -152,17 +152,17 @@ function BookingForm() {
 
         <br /><br /><br />
 
-        <label htmlFor="Contact" id="requiredata">Contact Person <span>*</span> </label><br />
+        <label htmlFor="Contact" id="requiredata">Contact Person <span className="spespan">*</span> </label><br />
         <input type="text" name="Contact" id="Contact"className="input-text" placeholder="  First Name"required/>
-        <input type="text" name="Contact" id="Contact" className="input-text2" placeholder="  First Name"required/> <br />
+        <input type="text" name="Contact" id="Contact" className="input-text2" placeholder="  Last Name"required/> <br />
 
-        <label htmlFor="ID" id="requiredata">ID Number <span>*</span></label><br />
+        <label htmlFor="ID" id="requiredata">ID Number <span className="spespan">*</span></label><br />
         <input type="text" name="ID" id="ID"className="input-text"required/> <br />
 
-        <label htmlFor="Email" id="requiredata">E-mail <span>*</span></label><br />
+        <label htmlFor="Email" id="requiredata">E-mail <span className="spespan">*</span></label><br />
         <input type="text" name="Email" id="Email"className="input-text" placeholder="  Ex. myname@ad.sit.kmutt.ac.th"required/> <br />
 
-        <label htmlFor="Phone" id="requiredata">Phone <span>*</span></label><br />
+        <label htmlFor="Phone" id="requiredata">Phone <span className="spespan">*</span></label><br />
         <input type="text" name="Phone" id="Phone"className="input-text"required/> <br />
 
         <Link to="/Home" className="cancelbutton">cancel</Link>

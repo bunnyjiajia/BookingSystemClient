@@ -2,6 +2,7 @@ import React from "react";
 import "./body.css"
 import TableDay from "./TableDay";
 import { Link } from "react-router-dom";
+import ReserveInfo from "./reserveinfo";
 
 const BookingSuccessful=()=> {
     return (
@@ -18,7 +19,8 @@ const BookingSuccessful=()=> {
             
         </div>
         <br /><br />
-        <TableDay/><br /><br />
+        <ReserveInfo/>
+        <br /><br />
 
     <div align="center">
             <Link to="/Home" className="editbutton">OK</Link>
