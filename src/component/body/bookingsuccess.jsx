@@ -8,7 +8,7 @@ const BookingSuccessful=()=> {
         <>
         <div className="successfulbox">
             <div className="successfulbox2">
-                <img src="HelloW4/Vector 154 (Stroke).png" alt="iconsuc" />
+                <img src="/HelloW4/Vector 154 (Stroke).png" alt="iconsuc" />
                 <h1 className=" className="theader>
                     You have booked  <br />
                     "Room" !

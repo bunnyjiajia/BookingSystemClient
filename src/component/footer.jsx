@@ -6,7 +6,7 @@ const Footer=()=> {
     <div id="footer">
         <div className="FtTop">
           <div className="FtBox1">
-            <img src="HelloW4/SIT logoText.png" alt="logoText" />
+            <img src="/HelloW4/SIT logoText.png" alt="logoText" />
             <p>SIT BOOKING SYSTEM</p>
           </div>
 

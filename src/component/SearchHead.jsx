@@ -40,7 +40,7 @@ const SearchHead = () => {
             <div className="SearchBarp2">Add Dates</div>
           </div>
           <div className="box4">
-            <img src="HelloW4/fe_search.png" alt="search" />
+            <img src="/HelloW4/fe_search.png" alt="search" />
           </div>
         </div>
       </Link>
