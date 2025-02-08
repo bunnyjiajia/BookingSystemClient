@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <div className="banners">
         <div className="bannersBG">
-          <img src="HelloW4/image 6.png" alt="bannersBG" width="100%" height="auto" />
+          <img src="/HelloW4/image 6.png" alt="bannersBG" width="100%" height="auto" />
         </div>
         <div className="filter"></div>
         <Header/>

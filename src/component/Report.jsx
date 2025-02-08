@@ -10,7 +10,7 @@ const Report=()=>{
         <Header/>
         <div className="section">
                 <Link to="/Home">
-                <img src="HelloW4/Subtract.png" alt="back"/>
+                <img src="/HelloW4/Subtract.png" alt="back"/>
                 </Link>
                 <h1>REPORT ON MEETING</h1>
             </div>

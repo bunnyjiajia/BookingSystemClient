@@ -35,7 +35,7 @@ const Header = () => {
       <div className="Header">
         <div id="icon">
           <a href="/Home">
-            <img src="HelloW4/SIT logo.png" alt="logo" />
+            <img src="/HelloW4/SIT logo.png" alt="logo" />
           </a>
           <div className="MainHeader">
             <a href="/Home">SIT BOOKING SYSTEM</a>
@@ -50,7 +50,7 @@ const Header = () => {
         
           <div className="search">
             <form action="">
-              <img src="HelloW4/bx_bx-search.png" alt="search-icon" />
+              <img src="/HelloW4/bx_bx-search.png" alt="search-icon" />
               <input
                 type="text"
                 placeholder="SEARCH"
