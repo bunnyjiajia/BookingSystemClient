@@ -1,8 +1,8 @@
 import React from "react";
 import "./body.css"
 import { useEffect, useState } from "react";
-import { getReserveDetails } from "../service/bookingService"; // Adjust the import based on your project structure
-import { formatISODate } from "../../../server/src/utils/BookingUtil";
+import { getReserveDetails } from "../service/bookingService.js"; // Adjust the import based on your project structure
+import { formatISODate } from "../../../server/src/utils/BookingUtil.js";
 
 function ReserveInfo() {
     const [reserveDetails, setReserveDetails] = useState([]);
