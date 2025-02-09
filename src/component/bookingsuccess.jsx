@@ -1,22 +1,21 @@
 import React from "react";
 import "./body.css"
-import TableDay from "./TableDay";
 import { Link } from "react-router-dom";
-import ReserveInfo from "./reserveinfo";
+import ReserveInfo from "./reserveInfo";
 
 const BookingSuccessful=()=> {
     return (
         <>
         <div className="successfulbox">
             <div className="successfulbox2">
-                <img src="/HelloW4/Vector 154 (Stroke).png" alt="iconsuc" />
+                <img src="HelloW4/Vector 154 (Stroke).png" alt="iconsuc" />
                 <h1 className=" className="theader>
                     You have booked  <br />
                     "Room" !
                 </h1>
 
             </div>
-            
+
         </div>
         <br /><br />
         <ReserveInfo/>
@@ -29,8 +28,6 @@ const BookingSuccessful=()=> {
 
     ) ;
 
-
-
 }
 
-export default BookingSuccessful
+export default BookingSuccessful;

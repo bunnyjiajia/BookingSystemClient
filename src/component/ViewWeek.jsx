@@ -1,6 +1,6 @@
 import React from 'react'
 import NavOtPage from './NavOtPage'
-import WeeklytTable from './body/weeklytable'
+import WeeklytTable from './weeklytable'
 
 function ViewWeek() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import BookingForm from "./body/bookingform";
+import BookingForm from "./bookingform";
 import { Link } from "react-router-dom"; // ใช้ useLocation จาก react-router-dom
 
 
@@ -10,7 +10,7 @@ const Rooms=()=>{
             <Header/>
             <div className="section">
                 <Link to="/Home">
-                    <img src="/HelloW4/Subtract.png" alt="back"/>
+                    <img src="HelloW4/Subtract.png" alt="back"/>
                 </Link>
                 
                 <h1>ROOM RESERVATION</h1>

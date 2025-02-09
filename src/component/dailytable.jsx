@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./body.css";
-import TableDay from "./TableDay";
+import TableDay from "./TableDay copy";
 import LXTable from "./LXtable";
 import SITTable from "./SITtable";
 

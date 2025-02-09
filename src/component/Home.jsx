@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import DailyTable from "./body/dailytable"
+import DailyTable from "./dailytable"
 import { Link } from "react-router-dom";
 
 /*import PopUp from "./PopUp"; <PopUp/>*/

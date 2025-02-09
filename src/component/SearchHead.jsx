@@ -9,7 +9,7 @@ const SearchHead = () => {
 
   return (
     <>
-      <nav className="SearchHeaders"> {/** ปุ่มเฉยๆ ไม่ใช่ช่องเสิร์ช*/}
+      <nav className="SearchHeaders">
         <h2>FIND</h2>
         <div className={`action ${isActive("/Rooms") ? "clicked" : ""}`}>
           <Link to="/Rooms">Rooms</Link>
@@ -23,7 +23,7 @@ const SearchHead = () => {
         <div className={`action ${isActive("/ViewMonth") ? "clicked" : ""}`}>
           <Link to="/ViewMonth">View Month</Link>
         </div>
-      </nav>  
+      </nav>
 
       <Link to="/Rooms">
         <div className="SearchBar">
@@ -40,7 +40,7 @@ const SearchHead = () => {
             <div className="SearchBarp2">Add Dates</div>
           </div>
           <div className="box4">
-            <img src="/HelloW4/fe_search.png" alt="search" />
+            <img src="HelloW4/fe_search.png" alt="search" />
           </div>
         </div>
       </Link>

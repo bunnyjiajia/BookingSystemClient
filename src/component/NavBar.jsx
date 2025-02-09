@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchHead from './SearchHead';
 import Header from './Header'
-import BookingSuccessful from './body/bookingsuccess';
+import BookingSuccessful from './bookingsuccess';
 
 
 const NavBar = () => {
@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <div className="banners">
         <div className="bannersBG">
-          <img src="/HelloW4/image 6.png" alt="bannersBG" width="100%" height="auto" />
+          <img src="HelloW4/image 6.png" alt="bannersBG" width="100%" height="auto" />
         </div>
         <div className="filter"></div>
         <Header/>

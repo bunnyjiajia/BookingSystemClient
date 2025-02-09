@@ -17,7 +17,7 @@ function BookingInfo() {
             <div id="helpboxstlye3">
                 <p className="helptexthearder">
                     Description: <br /><br />
-                    ผู้สอน: <br /><br />
+                    Author: <br /><br />
                     Room: <br /><br />
                     Start time: <br /><br />
                     Duration: <br /><br />

@@ -1,6 +1,6 @@
 import React from 'react'
 import NavOtPage from './NavOtPage'
-import MonthlyTable from './body/monthlytable'
+import MonthlyTable from './monthlytable'
 
 const ViewMonth=()=> {
   return (

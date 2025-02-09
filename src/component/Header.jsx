@@ -1,33 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { searchRooms} from '../service/roomService.js'; // Assuming correct import path
+import { searchBuildings} from '../service/buildingService.js'; // Assuming correct import path
 import '../index.css';
 
 const Header = () => {
-  // สร้าง state สำหรับเก็บคำค้นหาและผลลัพธ์ที่กรอง
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredResults, setFilteredResults] = useState([]);
+  const [filteredRooms, setFilteredRooms] = useState([]);
 
-  // ข้อมูลที่เราจะใช้ในการค้นหา
-  const data = [
-    "Rooms",
-    "Help",
-    "Home",
-    "Report",
-    "ViewDay",
-    "ViewMonth",
-    "ViewWeek",
-    "Subjects"
-  ];
+  const [filteredBuildings, setFilteredBuildings] = useState([]);
 
-  // ฟังก์ชันค้นหาที่จะทำการกรองข้อมูล
-  const handleSearch = (event) => {
+
+  // Function to handle search term input change
+  const handleSearch = async (event) => {
     const term = event.target.value;
     setSearchTerm(term);
 
-    // คัดกรองข้อมูลตามคำค้นหาที่พิมพ์
-    const filtered = data.filter((item) =>
-      item.toLowerCase().includes(term.toLowerCase())
-    );
-    setFilteredResults(filtered);
+    if (term) {
+      try {
+        console.log(term);
+        
+        // Fetch search results from backend
+        const rooms = await searchRooms(term);
+        // console.log(rooms);
+        
+        const buildings = await searchBuildings(term);
+        console.log(buildings);
+        
+
+        // Set the search results
+        setFilteredRooms(rooms);
+        setFilteredBuildings(buildings);
+        
+      } catch (error) {
+        console.error("Error fetching search results:", error);
+      }
+    } else {
+      // Clear results when search term is empty
+      setFilteredRooms([]);
+      setFilteredBuildings([]);
+    }
   };
 
   return (
@@ -35,7 +46,7 @@ const Header = () => {
       <div className="Header">
         <div id="icon">
           <a href="/Home">
-            <img src="/HelloW4/SIT logo.png" alt="logo" />
+            <img src="HelloW4/SIT logo.png" alt="logo" />
           </a>
           <div className="MainHeader">
             <a href="/Home">SIT BOOKING SYSTEM</a>
@@ -47,10 +58,9 @@ const Header = () => {
           <a href="/Help">HELP</a>
           <a href="/Report">REPORT</a>
 
-        
           <div className="search">
             <form action="">
-              <img src="/HelloW4/bx_bx-search.png" alt="search-icon" />
+              <img src="HelloW4/bx_bx-search.png" alt="search-icon" />
               <input
                 type="text"
                 placeholder="SEARCH"
@@ -59,16 +69,32 @@ const Header = () => {
               />
             </form>
 
-            {/* ผลลัพธ์การค้นหา */}
-            {searchTerm && ( 
-              <div className="search-results"> 
-                {filteredResults.length > 0 ? (
-                  filteredResults.map((result, index) => (
-                    <div key={index} className="search-item">
-                      {result}
-                    </div>        /*ช่องเสิร์ช*/
-                  ))
-                ) : (
+            {/* Search Results */}
+            {searchTerm && (
+              <div className="search-results">
+                {filteredRooms.length > 0 && (
+                  <div>
+                    <h3>Rooms:</h3>
+                    {filteredRooms.map((room, index) => (
+                      <div key={index} className="search-item">
+                        {room.room_name} {/* Adjust based on your response data */}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {filteredBuildings.length > 0 && (
+                  <div>
+                    <h3>Buildings:</h3>
+                    {filteredBuildings.map((building, index) => (
+                      <div key={index} className="search-item">
+                        {building.building_name} {/* Adjust based on your response data */}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {filteredRooms.length === 0 && filteredBuildings.length === 0 && (
                   <div className="no-results">No results found</div>
                 )}
               </div>

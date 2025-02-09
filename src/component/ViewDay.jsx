@@ -1,6 +1,6 @@
 import React from 'react'
 import NavOtPage from './NavOtPage'
-import DailyTable from './body/dailytable'
+import DailyTable from './dailytable'
 
 
 const ViewDay = () => {

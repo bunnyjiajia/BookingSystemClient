@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import BookingInfo from "./body/bookinginfo";
+import BookingInfo from "./bookinginfo";
 
 const Info=()=>{
     return(

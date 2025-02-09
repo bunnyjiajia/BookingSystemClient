@@ -1,5 +1,5 @@
 import React from "react";
-import BookingSuccessful from "./body/bookingsuccess";
+import BookingSuccessful from "./bookingsuccess";
 import Header from "./Header";
 
 const Result=()=>{
