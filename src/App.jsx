@@ -13,7 +13,6 @@ import PopUp from './component/PopUp'
 import Info from './component/info'
 import Result from './component/Result';
 
-
 const App=()=> {
   
 
